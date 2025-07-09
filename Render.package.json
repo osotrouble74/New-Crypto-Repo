@@ -1,0 +1,16 @@
+{"name":"cryptojackpot-backend","version":"1.0.0","main":"server.js","scripts": {"start":"node server.js"
+  },"dependencies": {"express":"^4.17.1"
+  }}```
+
+**What it does**: Lists Express.js as the dependency and defines the start script.
+
+#### 4. Vercel Configuration (`vercel.json`)
+
+This configures Vercel to host the static`index.html`.
+
+```json
+{"version": 2,"builds": [
+    {"src":"index.html","use":"@vercel/static"
+    }],"routes": [
+    {"src":"/(.*)","dest":"index.html"
+    }]}
